@@ -1,0 +1,5 @@
+l
+ls
+ssh cnuapp@jalil.dev.enova.com -XYC
+ssh jalil.dev.enova.com
+ssh cnuapp@jalil.dev.enova.com
