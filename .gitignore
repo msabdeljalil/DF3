@@ -74,3 +74,4 @@ owasp_zap_root_ca.cer
 .zcompdump-MSA-Mac-5.0.8
 .zcompdump-MSA-Mac-5.3.1
 .zcompdump-MacBook ProTEST-5.0.8
+.serverauth.*

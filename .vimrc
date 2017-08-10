@@ -5,14 +5,18 @@ runtime macros/matchit.vim
 " See ~/.vim/bundle for all installed plugins.
 " See ~/.vim/bundle/vim-sensible for core settings.
 
+filetype plugin indent on
+" show existing tab with 4 spaces width
 set tabstop=2
+" when indenting with '>', use 4 spaces width
 set shiftwidth=2
-set softtabstop=2
+" On pressing tab, insert 4 spaces
 set expandtab
-set noswapfile
+set softtabstop=2
+"set smarttab
 
+set noswapfile
 set smartindent
-set smarttab
 set smartcase
 
 set hlsearch
@@ -30,3 +34,5 @@ nnoremap <silent> <F2> :buffers<CR>
 nnoremap <silent> <F3> :bn<CR>
 set grepprg=ack-grep\
 
+" Hoping this fixes the Vim segfault issue, from a stackoverflow article -- Mabdeljalil 11/7/16
+set shell=/bin/sh
