@@ -25,6 +25,7 @@ owasp_zap_root_ca.cer
 
 .gitconfig
 .vim/bundle
+.vim/.*
 .CFUserTextEncoding
 .DS_Store
 .Trash/
