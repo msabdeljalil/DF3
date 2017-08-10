@@ -52,10 +52,8 @@ ZSH_THEME="avit"
 plugins=(git)
 
 # User configuration
-
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -82,5 +80,27 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-#
+alias i2p="/Applications/i2p/i2prouter" # Shortcut for i2p -mabdeljalil Dec 9, 2016
+alias be="bundle exec"
+alias 8b="cd ~/Work/8b"
+alias weather="curl wttr.in"
+alias start_pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+
+FIX_VPN_POW=yes
+FIX_VPN_MINIRAISER=yes
+
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
+# Setting up 8b... Dec 2016
+[ -d "/Users/mabdeljalil/Work/8b/bin" ] && export PATH="$PATH:/Users/mabdeljalil/Work/8b/bin"
+export GOPATH=$HOME/go
+export PATH="$PATH:$GOPATH/bin"
+
+# Installing gvm for GoLang March 19, 2017
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# For installing / configuring Chef (July 26, 2017)
+export CHEF_ENVIRONMENT_PATH=~/Work/chef-environments
