@@ -23,6 +23,7 @@ pprof/
 tags
 owasp_zap_root_ca.cer
 
+.android/
 .gitconfig
 .vim/bundle
 .vim/.*

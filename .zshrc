@@ -5,7 +5,7 @@ export ZSH=/Users/mabdeljalil/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+# ZSH_THEME="simple"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +49,7 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# plugins=(git)
 
 # User configuration
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
@@ -104,3 +104,14 @@ export PATH=$PATH:$GOPATH/bin
 
 # For installing / configuring Chef (July 26, 2017)
 export CHEF_ENVIRONMENT_PATH=~/Work/chef-environments
+
+# This was copied from  ~/.oh-my-zsh/themes/simple.zsh-theme because loading
+# that file itself was slowing everything down. --mabdeljalil Aug 11, 2017
+PROMPT='%{$fg[green]%}%~%{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color%} '
+ZSH_THEME_GIT_PROMPT_PREFIX="("
+ZSH_THEME_GIT_PROMPT_SUFFIX=")"
+ZSH_THEME_GIT_PROMPT_DIRTY=" ✗"
+ZSH_THEME_GIT_PROMPT_CLEAN=" ✔"
+
+# Aliasing ADB --mabdeljalil Fri Aug 11, 2017
+alias adb="Library/Android/sdk/platform-tools/adb"
