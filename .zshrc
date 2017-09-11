@@ -54,6 +54,7 @@ export ZSH=/Users/mabdeljalil/.oh-my-zsh
 # User configuration
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+export EDITOR=vim
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
