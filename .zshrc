@@ -116,3 +116,11 @@ ZSH_THEME_GIT_PROMPT_CLEAN=" ✔"
 
 # Aliasing ADB --mabdeljalil Fri Aug 11, 2017
 alias adb="Library/Android/sdk/platform-tools/adb"
+
+# Adding AWS CLI to path --mabdeljalil Wed Oct 11, 2017
+export PATH=$PATH:~/Library/Python/3.5/bin/
+export AWS_SSH_KEY_ID=mabdeljalil # This is uner ~/.ssh/mabdeljalil
+
+# I hate shared history between TMUX panes --mabdeljalil June 6, 2018
+setopt noincappendhistory
+setopt nosharehistory

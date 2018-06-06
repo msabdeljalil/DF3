@@ -8,9 +8,9 @@ runtime macros/matchit.vim
 " 1 tab == 2 spaces
 set tabstop=2
 set shiftwidth=2
-set softtabstop=2
-set expandtab " Use spaces instead of tabs
+set softtabstop=0
 set smarttab
+set expandtab " Use spaces instead of tabs
 set smartindent
 set ai "Auto indent
 
