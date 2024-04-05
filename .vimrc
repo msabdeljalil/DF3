@@ -1,4 +1,14 @@
-execute pathogen#infect()
+" Pathogen recommended switching to vim default package mgr --mabdeljalil Mar 23, 2024
+" execute pathogen#infect()
+call plug#begin()
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'altercation/vim-colors-solarized'
+" Plug 'preservim/nerdtree'
+" Plug 'rust-lang/rust.vim'
+call plug#end()
+
 runtime macros/matchit.vim
 
 " Most of a reasonable vim config is taken care of by plugins.
